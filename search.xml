@@ -4,19 +4,6 @@
   
     
     <entry>
-      <title></title>
-      <link href="/2023/01/10/resove-idea-maven/"/>
-      <url>/2023/01/10/resove-idea-maven/</url>
-      
-        <content type="html"><![CDATA[<hr><p>title: maven修改后为什么会变回默认值<br>date: 2023-1-10 14:20:10<br>categories:</p><ul><li>java运用<br>tags:<br>​—</li></ul><p>###这里以2022.2.3版本的idea为例</p><p>首先打开idea项目创建面板</p><p>![](E:\app\博客\source\img\1 (1).png)</p><p>点击customize，在右边的下面点击configure</p><p>搜索maven</p><p>![](E:\app\博客\source\img\1 (2).png)</p><p>修改自己的maven配置</p><p>点击apply再点击ok</p><p>新建一个项目</p><p>![](E:\app\博客\source\img\1 (3).png)</p><p>打开setting</p><p>可以看到和自己修改的配置一样</p><p>![](E:\app\博客\source\img\1 (4).png)</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>如何解决maven配置变化</title>
       <link href="/2023/01/10/maven-use/"/>
       <url>/2023/01/10/maven-use/</url>
@@ -182,25 +169,6 @@
     
     
     <entry>
-      <title>How to install mysql</title>
-      <link href="/2022/07/29/how-to-installmysql/"/>
-      <url>/2022/07/29/how-to-installmysql/</url>
-      
-        <content type="html"><![CDATA[<h2 id="推荐链接地址：https-blog-csdn-net-Dai-sir-man-article-details-121233207"><a href="#推荐链接地址：https-blog-csdn-net-Dai-sir-man-article-details-121233207" class="headerlink" title="推荐链接地址：https://blog.csdn.net/Dai_sir_man/article/details/121233207"></a>推荐链接地址：<a href="https://blog.csdn.net/Dai_sir_man/article/details/121233207">https://blog.csdn.net/Dai_sir_man/article/details/121233207</a></h2><h2 id="mysql安装错误卸载推荐链接：https-blog-csdn-net-qq-42025798-article-details-119934735"><a href="#mysql安装错误卸载推荐链接：https-blog-csdn-net-qq-42025798-article-details-119934735" class="headerlink" title="mysql安装错误卸载推荐链接：https://blog.csdn.net/qq_42025798/article/details/119934735"></a>mysql安装错误卸载推荐链接：<a href="https://blog.csdn.net/qq_42025798/article/details/119934735">https://blog.csdn.net/qq_42025798/article/details/119934735</a></h2><h2 id="如何在MySQL官网下载Java连接MySQL数据库的驱动jar包：https-blog-csdn-net-denghuanzhang-article-details-121030779-spm-1001-2101-3001-6650-3-amp-depth-1-utm-relevant-index-6"><a href="#如何在MySQL官网下载Java连接MySQL数据库的驱动jar包：https-blog-csdn-net-denghuanzhang-article-details-121030779-spm-1001-2101-3001-6650-3-amp-depth-1-utm-relevant-index-6" class="headerlink" title="如何在MySQL官网下载Java连接MySQL数据库的驱动jar包：https://blog.csdn.net/denghuanzhang/article/details/121030779?spm=1001.2101.3001.6650.3&amp;depth_1-utm_relevant_index=6"></a>如何在MySQL官网下载Java连接MySQL数据库的驱动jar包：<a href="https://blog.csdn.net/denghuanzhang/article/details/121030779?spm=1001.2101.3001.6650.3&amp;depth_1-utm_relevant_index=6">https://blog.csdn.net/denghuanzhang/article/details/121030779?spm=1001.2101.3001.6650.3&amp;depth_1-utm_relevant_index=6</a></h2><h2 id="关闭和启动mysql服务推荐链接：https-blog-csdn-net-zhuiqiuzhuoyue583-article-details-80790155"><a href="#关闭和启动mysql服务推荐链接：https-blog-csdn-net-zhuiqiuzhuoyue583-article-details-80790155" class="headerlink" title="关闭和启动mysql服务推荐链接：https://blog.csdn.net/zhuiqiuzhuoyue583/article/details/80790155"></a>关闭和启动mysql服务推荐链接：<a href="https://blog.csdn.net/zhuiqiuzhuoyue583/article/details/80790155">https://blog.csdn.net/zhuiqiuzhuoyue583/article/details/80790155</a></h2><span id="more"></span><h2 id="sql-service安装教程："><a href="#sql-service安装教程：" class="headerlink" title="sql service安装教程："></a>sql service安装教程：</h2>]]></content>
-      
-      
-      <categories>
-          
-          <category> mysql安装运用 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>如何解决vscode更新问题</title>
       <link href="/2022/07/29/how-to-update-vscode/"/>
       <url>/2022/07/29/how-to-update-vscode/</url>
@@ -211,6 +179,25 @@
       <categories>
           
           <category> vscode运用 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>How to install mysql</title>
+      <link href="/2022/07/29/how-to-installmysql/"/>
+      <url>/2022/07/29/how-to-installmysql/</url>
+      
+        <content type="html"><![CDATA[<h2 id="推荐链接地址：https-blog-csdn-net-Dai-sir-man-article-details-121233207"><a href="#推荐链接地址：https-blog-csdn-net-Dai-sir-man-article-details-121233207" class="headerlink" title="推荐链接地址：https://blog.csdn.net/Dai_sir_man/article/details/121233207"></a>推荐链接地址：<a href="https://blog.csdn.net/Dai_sir_man/article/details/121233207">https://blog.csdn.net/Dai_sir_man/article/details/121233207</a></h2><h2 id="mysql安装错误卸载推荐链接：https-blog-csdn-net-qq-42025798-article-details-119934735"><a href="#mysql安装错误卸载推荐链接：https-blog-csdn-net-qq-42025798-article-details-119934735" class="headerlink" title="mysql安装错误卸载推荐链接：https://blog.csdn.net/qq_42025798/article/details/119934735"></a>mysql安装错误卸载推荐链接：<a href="https://blog.csdn.net/qq_42025798/article/details/119934735">https://blog.csdn.net/qq_42025798/article/details/119934735</a></h2><h2 id="如何在MySQL官网下载Java连接MySQL数据库的驱动jar包：https-blog-csdn-net-denghuanzhang-article-details-121030779-spm-1001-2101-3001-6650-3-amp-depth-1-utm-relevant-index-6"><a href="#如何在MySQL官网下载Java连接MySQL数据库的驱动jar包：https-blog-csdn-net-denghuanzhang-article-details-121030779-spm-1001-2101-3001-6650-3-amp-depth-1-utm-relevant-index-6" class="headerlink" title="如何在MySQL官网下载Java连接MySQL数据库的驱动jar包：https://blog.csdn.net/denghuanzhang/article/details/121030779?spm=1001.2101.3001.6650.3&amp;depth_1-utm_relevant_index=6"></a>如何在MySQL官网下载Java连接MySQL数据库的驱动jar包：<a href="https://blog.csdn.net/denghuanzhang/article/details/121030779?spm=1001.2101.3001.6650.3&amp;depth_1-utm_relevant_index=6">https://blog.csdn.net/denghuanzhang/article/details/121030779?spm=1001.2101.3001.6650.3&amp;depth_1-utm_relevant_index=6</a></h2><h2 id="关闭和启动mysql服务推荐链接：https-blog-csdn-net-zhuiqiuzhuoyue583-article-details-80790155"><a href="#关闭和启动mysql服务推荐链接：https-blog-csdn-net-zhuiqiuzhuoyue583-article-details-80790155" class="headerlink" title="关闭和启动mysql服务推荐链接：https://blog.csdn.net/zhuiqiuzhuoyue583/article/details/80790155"></a>关闭和启动mysql服务推荐链接：<a href="https://blog.csdn.net/zhuiqiuzhuoyue583/article/details/80790155">https://blog.csdn.net/zhuiqiuzhuoyue583/article/details/80790155</a></h2><span id="more"></span><h2 id="sql-service安装教程："><a href="#sql-service安装教程：" class="headerlink" title="sql service安装教程："></a>sql service安装教程：</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> mysql安装运用 </category>
           
       </categories>
       
