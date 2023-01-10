@@ -150,16 +150,16 @@
     
     
     <entry>
-      <title>如何改名网易邮箱</title>
-      <link href="/2022/07/29/how-to-gai-ming/"/>
-      <url>/2022/07/29/how-to-gai-ming/</url>
+      <title>How to install mysql</title>
+      <link href="/2022/07/29/how-to-installmysql/"/>
+      <url>/2022/07/29/how-to-installmysql/</url>
       
-        <content type="html"><![CDATA[<p>##视频</p><p><video src="1.mp4" position="absolute" width="100%" height="100%" controls="controls"></video></p><span id="more"></span>]]></content>
+        <content type="html"><![CDATA[<h2 id="推荐链接地址：https-blog-csdn-net-Dai-sir-man-article-details-121233207"><a href="#推荐链接地址：https-blog-csdn-net-Dai-sir-man-article-details-121233207" class="headerlink" title="推荐链接地址：https://blog.csdn.net/Dai_sir_man/article/details/121233207"></a>推荐链接地址：<a href="https://blog.csdn.net/Dai_sir_man/article/details/121233207">https://blog.csdn.net/Dai_sir_man/article/details/121233207</a></h2><h2 id="mysql安装错误卸载推荐链接：https-blog-csdn-net-qq-42025798-article-details-119934735"><a href="#mysql安装错误卸载推荐链接：https-blog-csdn-net-qq-42025798-article-details-119934735" class="headerlink" title="mysql安装错误卸载推荐链接：https://blog.csdn.net/qq_42025798/article/details/119934735"></a>mysql安装错误卸载推荐链接：<a href="https://blog.csdn.net/qq_42025798/article/details/119934735">https://blog.csdn.net/qq_42025798/article/details/119934735</a></h2><h2 id="如何在MySQL官网下载Java连接MySQL数据库的驱动jar包：https-blog-csdn-net-denghuanzhang-article-details-121030779-spm-1001-2101-3001-6650-3-amp-depth-1-utm-relevant-index-6"><a href="#如何在MySQL官网下载Java连接MySQL数据库的驱动jar包：https-blog-csdn-net-denghuanzhang-article-details-121030779-spm-1001-2101-3001-6650-3-amp-depth-1-utm-relevant-index-6" class="headerlink" title="如何在MySQL官网下载Java连接MySQL数据库的驱动jar包：https://blog.csdn.net/denghuanzhang/article/details/121030779?spm=1001.2101.3001.6650.3&amp;depth_1-utm_relevant_index=6"></a>如何在MySQL官网下载Java连接MySQL数据库的驱动jar包：<a href="https://blog.csdn.net/denghuanzhang/article/details/121030779?spm=1001.2101.3001.6650.3&amp;depth_1-utm_relevant_index=6">https://blog.csdn.net/denghuanzhang/article/details/121030779?spm=1001.2101.3001.6650.3&amp;depth_1-utm_relevant_index=6</a></h2><h2 id="关闭和启动mysql服务推荐链接：https-blog-csdn-net-zhuiqiuzhuoyue583-article-details-80790155"><a href="#关闭和启动mysql服务推荐链接：https-blog-csdn-net-zhuiqiuzhuoyue583-article-details-80790155" class="headerlink" title="关闭和启动mysql服务推荐链接：https://blog.csdn.net/zhuiqiuzhuoyue583/article/details/80790155"></a>关闭和启动mysql服务推荐链接：<a href="https://blog.csdn.net/zhuiqiuzhuoyue583/article/details/80790155">https://blog.csdn.net/zhuiqiuzhuoyue583/article/details/80790155</a></h2><span id="more"></span><h2 id="sql-service安装教程："><a href="#sql-service安装教程：" class="headerlink" title="sql service安装教程："></a>sql service安装教程：</h2>]]></content>
       
       
       <categories>
           
-          <category> vscode运用 </category>
+          <category> mysql安装运用 </category>
           
       </categories>
       
@@ -188,25 +188,6 @@
     
     
     <entry>
-      <title>How to install mysql</title>
-      <link href="/2022/07/29/how-to-installmysql/"/>
-      <url>/2022/07/29/how-to-installmysql/</url>
-      
-        <content type="html"><![CDATA[<h2 id="推荐链接地址：https-blog-csdn-net-Dai-sir-man-article-details-121233207"><a href="#推荐链接地址：https-blog-csdn-net-Dai-sir-man-article-details-121233207" class="headerlink" title="推荐链接地址：https://blog.csdn.net/Dai_sir_man/article/details/121233207"></a>推荐链接地址：<a href="https://blog.csdn.net/Dai_sir_man/article/details/121233207">https://blog.csdn.net/Dai_sir_man/article/details/121233207</a></h2><h2 id="mysql安装错误卸载推荐链接：https-blog-csdn-net-qq-42025798-article-details-119934735"><a href="#mysql安装错误卸载推荐链接：https-blog-csdn-net-qq-42025798-article-details-119934735" class="headerlink" title="mysql安装错误卸载推荐链接：https://blog.csdn.net/qq_42025798/article/details/119934735"></a>mysql安装错误卸载推荐链接：<a href="https://blog.csdn.net/qq_42025798/article/details/119934735">https://blog.csdn.net/qq_42025798/article/details/119934735</a></h2><h2 id="如何在MySQL官网下载Java连接MySQL数据库的驱动jar包：https-blog-csdn-net-denghuanzhang-article-details-121030779-spm-1001-2101-3001-6650-3-amp-depth-1-utm-relevant-index-6"><a href="#如何在MySQL官网下载Java连接MySQL数据库的驱动jar包：https-blog-csdn-net-denghuanzhang-article-details-121030779-spm-1001-2101-3001-6650-3-amp-depth-1-utm-relevant-index-6" class="headerlink" title="如何在MySQL官网下载Java连接MySQL数据库的驱动jar包：https://blog.csdn.net/denghuanzhang/article/details/121030779?spm=1001.2101.3001.6650.3&amp;depth_1-utm_relevant_index=6"></a>如何在MySQL官网下载Java连接MySQL数据库的驱动jar包：<a href="https://blog.csdn.net/denghuanzhang/article/details/121030779?spm=1001.2101.3001.6650.3&amp;depth_1-utm_relevant_index=6">https://blog.csdn.net/denghuanzhang/article/details/121030779?spm=1001.2101.3001.6650.3&amp;depth_1-utm_relevant_index=6</a></h2><h2 id="关闭和启动mysql服务推荐链接：https-blog-csdn-net-zhuiqiuzhuoyue583-article-details-80790155"><a href="#关闭和启动mysql服务推荐链接：https-blog-csdn-net-zhuiqiuzhuoyue583-article-details-80790155" class="headerlink" title="关闭和启动mysql服务推荐链接：https://blog.csdn.net/zhuiqiuzhuoyue583/article/details/80790155"></a>关闭和启动mysql服务推荐链接：<a href="https://blog.csdn.net/zhuiqiuzhuoyue583/article/details/80790155">https://blog.csdn.net/zhuiqiuzhuoyue583/article/details/80790155</a></h2><span id="more"></span><h2 id="sql-service安装教程："><a href="#sql-service安装教程：" class="headerlink" title="sql service安装教程："></a>sql service安装教程：</h2>]]></content>
-      
-      
-      <categories>
-          
-          <category> mysql安装运用 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>while(reder.hasNextDouble)的用法</title>
       <link href="/2022/07/29/java-println/"/>
       <url>/2022/07/29/java-println/</url>
@@ -217,6 +198,25 @@
       <categories>
           
           <category> java运用 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何改名网易邮箱</title>
+      <link href="/2022/07/29/how-to-gai-ming/"/>
+      <url>/2022/07/29/how-to-gai-ming/</url>
+      
+        <content type="html"><![CDATA[<p>##视频</p><p><video src="1.mp4" position="absolute" width="100%" height="100%" controls="controls"></video></p><span id="more"></span>]]></content>
+      
+      
+      <categories>
+          
+          <category> vscode运用 </category>
           
       </categories>
       
