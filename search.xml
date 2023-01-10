@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>如何解决vscode运行cmd出现乱码</title>
+      <link href="/2022/09/26/solve-the-vscode/"/>
+      <url>/2022/09/26/solve-the-vscode/</url>
+      
+        <content type="html"><![CDATA[<h2 id="如何解决vxcode中C-x2F-C-中的exe文件运行出现乱码的问题"><a href="#如何解决vxcode中C-x2F-C-中的exe文件运行出现乱码的问题" class="headerlink" title="如何解决vxcode中C&#x2F;C++中的exe文件运行出现乱码的问题"></a>如何解决vxcode中C&#x2F;C++中的exe文件运行出现乱码的问题</h2><p>首先我们先运行一个简单的C++文件</p><p>如图：</p><p><img src="/2022/09/26/solve-the-vscode/1.png"></p><p>我们可以看到，vscode下面的终端输出了我们的程序</p><p><img src="/2022/09/26/solve-the-vscode/2.png"></p><p>并在左上角生成了exe文件<br><img src="/2022/09/26/solve-the-vscode/3.png"></p><p>打开文件夹运行发现运行失败</p><p>遇到这种情况我们只需要调出cmd并且将exe文件拖入控制台即可运行成功</p><p><img src="/4.png"><br><img src="/5.png"><br>运行大的文件的话，也是一样</p><p><img src="/6.png"></p><p>下面以贪吃蛇为例<br><img src="/7.png"></p><p>视频:</p><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="https://www.bilibili.com/video/BV1bd4y1U7th/" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div><p>视频清晰度问题：需要登陆才能看到108p的</p><p><video src="2.mp4" position="absolute" width="100%" height="100%" controls="controls"></video></p><span id="more"></span>]]></content>
+      
+      
+      <categories>
+          
+          <category> vscode运用 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何运行vscode不可运行的exe文件2(更新)</title>
+      <link href="/2022/09/04/use-the-vscode2/"/>
+      <url>/2022/09/04/use-the-vscode2/</url>
+      
+        <content type="html"><![CDATA[<h2 id="如何解决vxcode中C-x2F-C-中的exe文件运行无法弹出的问题"><a href="#如何解决vxcode中C-x2F-C-中的exe文件运行无法弹出的问题" class="headerlink" title="如何解决vxcode中C&#x2F;C++中的exe文件运行无法弹出的问题"></a>如何解决vxcode中C&#x2F;C++中的exe文件运行无法弹出的问题</h2><p>首先我们先运行一个简单的C++文件</p><p>如图：</p><p><img src="/2022/09/04/use-the-vscode2/1.png"></p><p>我们可以看到，vscode可以弹出控制台并且成功运行输出了我们的程序</p><p><img src="/2022/09/04/use-the-vscode2/2.png"></p><p><img src="/2022/09/04/use-the-vscode2/3.png"></p><h2 id="如何设置弹出"><a href="#如何设置弹出" class="headerlink" title="如何设置弹出"></a>如何设置弹出</h2><h3 id="设置-launch-json文件，调成控制台输出"><a href="#设置-launch-json文件，调成控制台输出" class="headerlink" title="设置 launch.json文件，调成控制台输出"></a>设置 launch.json文件，调成控制台输出</h3><p><img src="/2022/09/04/use-the-vscode2/4.png"></p><p>代码：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;version&quot;</span>: <span class="string">&quot;0.2.0&quot;</span>,</span><br><span class="line">  <span class="string">&quot;configurations&quot;</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="string">&quot;name&quot;</span>: <span class="string">&quot;C/C++ Runner: Debug Session&quot;</span>,</span><br><span class="line">      <span class="string">&quot;type&quot;</span>: <span class="string">&quot;cppdbg&quot;</span>,</span><br><span class="line">      <span class="string">&quot;request&quot;</span>: <span class="string">&quot;launch&quot;</span>,</span><br><span class="line">      <span class="string">&quot;args&quot;</span>: [</span><br><span class="line">        <span class="string">&quot;/C&quot;</span>,</span><br><span class="line">                <span class="string">&quot;<span class="variable">$&#123;fileDirname&#125;</span>\\<span class="variable">$&#123;fileBasenameNoExtension&#125;</span>.exe&quot;</span>,</span><br><span class="line">                <span class="string">&quot;&amp;&quot;</span>,</span><br><span class="line">                <span class="string">&quot;echo.&quot;</span>,</span><br><span class="line">                <span class="string">&quot;&amp;&quot;</span>,</span><br><span class="line">                <span class="string">&quot;pause&quot;</span></span><br><span class="line">      ],</span><br><span class="line">      <span class="string">&quot;stopAtEntry&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">      <span class="string">&quot;externalConsole&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">      <span class="string">&quot;cwd&quot;</span>: <span class="string">&quot;d:/vscode_int/laji&quot;</span>,</span><br><span class="line">      <span class="string">&quot;program&quot;</span>: <span class="string">&quot;C:\\Windows\\System32\\cmd.exe&quot;</span>,</span><br><span class="line">      <span class="string">&quot;MIMode&quot;</span>: <span class="string">&quot;gdb&quot;</span>,</span><br><span class="line">      <span class="string">&quot;miDebuggerPath&quot;</span>: <span class="string">&quot;gdb&quot;</span>,</span><br><span class="line">      <span class="string">&quot;setupCommands&quot;</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="string">&quot;description&quot;</span>: <span class="string">&quot;Enable pretty-printing for gdb&quot;</span>,</span><br><span class="line">          <span class="string">&quot;text&quot;</span>: <span class="string">&quot;-enable-pretty-printing&quot;</span>,</span><br><span class="line">          <span class="string">&quot;ignoreFailures&quot;</span>: <span class="literal">true</span></span><br><span class="line">        &#125;</span><br><span class="line">      ]</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>修改tasks.json文件</p><p><img src="/2022/09/04/use-the-vscode2/5.png"></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">修改<span class="string">&quot;cwd&quot;</span>:这里是你的mingw64的bin文件路径</span><br></pre></td></tr></table></figure><p>代码：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="string">&quot;tasks&quot;</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="string">&quot;type&quot;</span>: <span class="string">&quot;cppbuild&quot;</span>,</span><br><span class="line">            <span class="string">&quot;label&quot;</span>: <span class="string">&quot;C/C++: gcc.exe 生成活动文件&quot;</span>,</span><br><span class="line">            <span class="string">&quot;command&quot;</span>: <span class="string">&quot;D:/app/bianchen/gcc/mingw64/bin/gcc.exe&quot;</span>,</span><br><span class="line">            <span class="string">&quot;args&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;-fdiagnostics-color=always&quot;</span>,</span><br><span class="line">                <span class="string">&quot;-g&quot;</span>,</span><br><span class="line">                <span class="string">&quot;<span class="variable">$&#123;file&#125;</span>&quot;</span>,</span><br><span class="line">                <span class="string">&quot;-o&quot;</span>,</span><br><span class="line">                <span class="string">&quot;<span class="variable">$&#123;fileDirname&#125;</span>\\<span class="variable">$&#123;fileBasenameNoExtension&#125;</span>.exe&quot;</span>,</span><br><span class="line">                <span class="string">&quot;&quot;</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="string">&quot;options&quot;</span>: &#123;</span><br><span class="line">                <span class="string">&quot;cwd&quot;</span>: <span class="string">&quot;D:/app/bianchen/gcc/mingw64/bin&quot;</span></span><br><span class="line">            &#125;,</span><br><span class="line">            <span class="string">&quot;problemMatcher&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;<span class="variable">$gcc</span>&quot;</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="string">&quot;group&quot;</span>: &#123;</span><br><span class="line">                <span class="string">&quot;kind&quot;</span>: <span class="string">&quot;build&quot;</span>,</span><br><span class="line">                <span class="string">&quot;isDefault&quot;</span>: <span class="literal">true</span></span><br><span class="line">            &#125;,</span><br><span class="line">            <span class="string">&quot;detail&quot;</span>: <span class="string">&quot;调试器生成的任务。&quot;</span></span><br><span class="line">        &#125;</span><br><span class="line">    ],</span><br><span class="line">    <span class="string">&quot;version&quot;</span>: <span class="string">&quot;2.0.0&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><span id="more"></span>]]></content>
+      
+      
+      <categories>
+          
+          <category> vscode运用 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>在大学的大数据专业我们好迷茫</title>
+      <link href="/2022/08/02/how-to-learn-bigdata/how-to-learn-bigdata/"/>
+      <url>/2022/08/02/how-to-learn-bigdata/how-to-learn-bigdata/</url>
+      
+        <content type="html"><![CDATA[<p>1、 编程语言基础：掌握面向对象、抽象类、接口、继承、多态和数据流及对象流等基础<br>2、 Linux系统的基本操作<br>3、 数据库：SQL语言<br>4、 Hadoop架构基础：<br>单台Windows系统上通过虚拟机搭建多台Linux虚拟机，从而构建Hadoop集群，再建立spark开发环境，完成大数据环境的配置搭建<br>5、 机器学习：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">大数据专业</span><br><span class="line">主修课程：</span><br><span class="line">面向对象程序设计、</span><br><span class="line">Hadoop实用技术、</span><br><span class="line">数据挖掘、</span><br><span class="line">机器学习、</span><br><span class="line">数据统计分析、</span><br><span class="line">高等数学、</span><br><span class="line">Python编程、</span><br><span class="line">JAVA编程、</span><br><span class="line">数据库技术、</span><br><span class="line">Web开发、</span><br><span class="line">Linux操作系统、</span><br><span class="line">大数据平台搭建及运维、</span><br><span class="line">大数据应用开发、</span><br><span class="line">可视化设计与开发等。</span><br></pre></td></tr></table></figure><p>大学考研推荐网：<a href="https://www.dxsbb.com/news/87405.html">https://www.dxsbb.com/news/87405.html</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 大数据有什么用？ </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何在vscode中运行tex文档</title>
+      <link href="/2022/08/02/how-to-texlive/"/>
+      <url>/2022/08/02/how-to-texlive/</url>
+      
+        <content type="html"><![CDATA[<h2 id="安装taxlive论文编译器"><a href="#安装taxlive论文编译器" class="headerlink" title="安装taxlive论文编译器"></a>安装taxlive论文编译器</h2><p>镜像文件：</p><p>链接：<a href="https://pan.baidu.com/s/1DL3GiyA2LtjUyA-xp1XvNg?pwd=0000">https://pan.baidu.com/s/1DL3GiyA2LtjUyA-xp1XvNg?pwd=0000</a><br>提取码：0000 </p><p><img src="/2022/08/02/how-to-texlive/1.png"></p><p>###首先下载相关的插件</p><p><img src="/2022/08/02/how-to-texlive/4.png"><br><img src="/2022/08/02/how-to-texlive/3.png"><br><img src="/2022/08/02/how-to-texlive/2.png"></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> LaTeX Workshop插件安装</span><br><span class="line">https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> LaTeX language support</span><br><span class="line">https://marketplace.visualstudio.com/items?itemName=torn4dom4n.latex-support</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> LTeX – LanguageTool grammar/spell checking</span><br><span class="line">https://marketplace.visualstudio.com/items?itemName=valentjn.vscode-ltex</span><br></pre></td></tr></table></figure><h3 id="配置推荐链接：https-zhuanlan-zhihu-com-p-144729565"><a href="#配置推荐链接：https-zhuanlan-zhihu-com-p-144729565" class="headerlink" title="配置推荐链接：https://zhuanlan.zhihu.com/p/144729565"></a>配置推荐链接：<a href="https://zhuanlan.zhihu.com/p/144729565">https://zhuanlan.zhihu.com/p/144729565</a></h3><p>##推荐大佬连接上我们的如见没有出现下面的页面不用担心：</p><p><img src="/2022/08/02/how-to-texlive/5.png"></p><h3 id="新建tex-这个只是示例"><a href="#新建tex-这个只是示例" class="headerlink" title="新建tex(这个只是示例)"></a>新建tex(这个只是示例)</h3><p><img src="/2022/08/02/how-to-texlive/6.png"></p><h3 id="在vscode中打开"><a href="#在vscode中打开" class="headerlink" title="在vscode中打开"></a>在vscode中打开</h3><h3 id="创建tex-tex文件"><a href="#创建tex-tex文件" class="headerlink" title="创建tex.tex文件"></a>创建tex.tex文件</h3><p><img src="/2022/08/02/how-to-texlive/7.png"></p><h3 id="示例代码："><a href="#示例代码：" class="headerlink" title="示例代码："></a>示例代码：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">\documentclass&#123;article&#125;        % Your input file must contain these two lines </span><br><span class="line">\begin&#123;document&#125;               % plus the \end&#123;document&#125; <span class="built_in">command</span> at the end.</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">\section&#123;Simple&#125;          % This <span class="built_in">command</span> makes a section title.</span><br><span class="line"> </span><br><span class="line">hello world</span><br><span class="line"> </span><br><span class="line">please</span><br><span class="line">Emphasized : \emph&#123;this is an example&#125;.</span><br><span class="line"></span><br><span class="line">Bold : \textbf&#123;no&#125;.</span><br><span class="line">\subsection&#123;english&#125;  % This <span class="built_in">command</span> makes a subsection title.</span><br><span class="line"></span><br><span class="line">please</span><br><span class="line"> </span><br><span class="line">\end&#123;document&#125;                 % The input file ends with this <span class="built_in">command</span>.</span><br></pre></td></tr></table></figure><p>###在左边框可显示：TEX<br>例图：<br><img src="/2022/08/02/how-to-texlive/8.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> vscode运用 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hao-to-insert-photo</title>
+      <link href="/2022/07/31/hao-to-insert-photo/"/>
+      <url>/2022/07/31/hao-to-insert-photo/</url>
+      
+        <content type="html"><![CDATA[<p>top_img(1.jpg)</p><div class="fj-gallery"><p><img src="/1.jpg"><br><img src="/2.jpg"><br><img src="/3.jpg"><br><img src="/4.jpg"><br><img src="/5.jpg"><br><img src="/6.jpg"><br><img src="/7.jpg"><br><img src="/8.jpg"><br><img src="/9.jpg"><br><img src="/10.jpg"><br><img src="/11.jpg"><br><img src="/12.jpg"><br><img src="/13.jpg"><br><img src="/14.jpg"><br><img src="/15.jpg"><br><img src="/16.jpg"><br><img src="/17.jpg"><br><img src="/18.jpg"></p>          </div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 如何在博客中加入图片库 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2022/07/31/hello-world/"/>
+      <url>/2022/07/31/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p><p>This is my website, click the button <a class="btn-beautify " href="https://alowree.gitee.io" title="MaraPython"><span>MaraPython</span></a><br>This is my website, click the button <a class="btn-beautify outline" href="https://alowree.gitee.io" title="MaraPython"><span>MaraPython</span></a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>How to install git</title>
+      <link href="/2022/07/29/How-to-install-git/"/>
+      <url>/2022/07/29/How-to-install-git/</url>
+      
+        <content type="html"><![CDATA[<img src="/2022/07/29/How-to-install-git/19.jpg" class title="This is an test image"><p><font face="楷体" color="brack" size="5">本次搭建git很简单</font></p><h2 id="官方地址：https-git-scm-com"><a href="#官方地址：https-git-scm-com" class="headerlink" title="官方地址：https://git-scm.com/"></a>官方地址：<a href="https://git-scm.com/">https://git-scm.com/</a></h2><p><img src="/2022/07/29/How-to-install-git/1.png"></p><h2 id="1-Window版本点击Dwonload-for-Window，Mac点击下面的Mac-Build就可以了"><a href="#1-Window版本点击Dwonload-for-Window，Mac点击下面的Mac-Build就可以了" class="headerlink" title="1.Window版本点击Dwonload for Window，Mac点击下面的Mac Build就可以了"></a>1.Window版本点击Dwonload for Window，Mac点击下面的Mac Build就可以了</h2><p>以window为例</p><p><img src="/2022/07/29/How-to-install-git/2.png"></p><h2 id="2-里面有64位还有32位操作系统，我的电脑是64位，我选择了独立安装程序"><a href="#2-里面有64位还有32位操作系统，我的电脑是64位，我选择了独立安装程序" class="headerlink" title="2.里面有64位还有32位操作系统，我的电脑是64位，我选择了独立安装程序"></a>2.里面有64位还有32位操作系统，我的电脑是64位，我选择了独立安装程序</h2><p><img src="/2022/07/29/How-to-install-git/3.png"></p><h2 id="3-双击下载好的git-进入安装"><a href="#3-双击下载好的git-进入安装" class="headerlink" title="3.双击下载好的git,进入安装"></a>3.双击下载好的git,进入安装</h2><p><img src="/2022/07/29/How-to-install-git/4.png"></p><h2 id="4-不需要点击only-show-new-options-点击next"><a href="#4-不需要点击only-show-new-options-点击next" class="headerlink" title="4.不需要点击only show new options,点击next"></a>4.不需要点击only show new options,点击next</h2><p><img src="/2022/07/29/How-to-install-git/5.png"></p><h2 id="5-介绍：on-the-desktop是添加图标到桌面"><a href="#5-介绍：on-the-desktop是添加图标到桌面" class="headerlink" title="5.介绍：on the desktop是添加图标到桌面"></a>5.介绍：on the desktop是添加图标到桌面</h2><pre><code>  Window explorer integration下的两个功能勾选后是添加到鼠标右键菜单  Git lfs是指大文件支持  下面两个associate是指关联文件  Check。。。是指检查git是否更新 下面一个是将git bash的配置文件添加到windows终端 如图：</code></pre><p><img src="/2022/07/29/How-to-install-git/6.png"></p><h2 id="6-按照上图勾选，点击next"><a href="#6-按照上图勾选，点击next" class="headerlink" title="6.按照上图勾选，点击next"></a>6.按照上图勾选，点击next</h2><p><img src="/2022/07/29/How-to-install-git/7.png"></p><h2 id="7-默认vim编辑器即可，点击next"><a href="#7-默认vim编辑器即可，点击next" class="headerlink" title="7.默认vim编辑器即可，点击next"></a>7.默认vim编辑器即可，点击next</h2><p><img src="/2022/07/29/How-to-install-git/8.png"></p><h2 id="8-默认选项即可，点击next"><a href="#8-默认选项即可，点击next" class="headerlink" title="8.默认选项即可，点击next"></a>8.默认选项即可，点击next</h2><p><img src="/2022/07/29/How-to-install-git/9.png"></p><h2 id="9-使用系统默认即可，点击next"><a href="#9-使用系统默认即可，点击next" class="headerlink" title="9.使用系统默认即可，点击next"></a>9.使用系统默认即可，点击next</h2><p><img src="/2022/07/29/How-to-install-git/10.png"></p><h2 id="10-使用捆绑的openssh-这里ssh-exe是git自带的"><a href="#10-使用捆绑的openssh-这里ssh-exe是git自带的" class="headerlink" title="10.使用捆绑的openssh,这里ssh.exe是git自带的"></a>10.使用捆绑的openssh,这里ssh.exe是git自带的</h2><p>后面基本都是按照默认按next<br><img src="/2022/07/29/How-to-install-git/11.png"><br><img src="/2022/07/29/How-to-install-git/12.png"><br><img src="/2022/07/29/How-to-install-git/13.png"><br><img src="/2022/07/29/How-to-install-git/14.png"><br><img src="/2022/07/29/How-to-install-git/15.png"><br><img src="/2022/07/29/How-to-install-git/16.png"></p><h2 id="11-注意这里的两项不需要勾选，直接点击install"><a href="#11-注意这里的两项不需要勾选，直接点击install" class="headerlink" title="11.注意这里的两项不需要勾选，直接点击install"></a>11.注意这里的两项不需要勾选，直接点击install</h2><h2 id="12-安装成功标志"><a href="#12-安装成功标志" class="headerlink" title="12.安装成功标志"></a>12.安装成功标志</h2><p><img src="/2022/07/29/How-to-install-git/7.png"></p><h2 id="13-在更多中会显示"><a href="#13-在更多中会显示" class="headerlink" title="13.在更多中会显示"></a>13.在更多中会显示</h2><p><img src="/2022/07/29/How-to-install-git/18.png"></p><h2 id="14-使用，可以在指定文件夹中执行相应命令"><a href="#14-使用，可以在指定文件夹中执行相应命令" class="headerlink" title="14.使用，可以在指定文件夹中执行相应命令"></a>14.使用，可以在指定文件夹中执行相应命令</h2><p><img src="/2022/07/29/How-to-install-git/19.png"></p><h3 id="要是官方有些卡的话，我已经把百度网盘链接放在下方，要的需要自取（window64位）"><a href="#要是官方有些卡的话，我已经把百度网盘链接放在下方，要的需要自取（window64位）" class="headerlink" title="要是官方有些卡的话，我已经把百度网盘链接放在下方，要的需要自取（window64位）"></a>要是官方有些卡的话，我已经把百度网盘链接放在下方，要的需要自取（window64位）</h3><p><a href="https://pan.baidu.com/s/1pziwxfm_DzCvFzggQ5j70A?pwd=0000">https://pan.baidu.com/s/1pziwxfm_DzCvFzggQ5j70A?pwd=0000</a><br>密码：0000</p><span id="more"></span>]]></content>
+      
+      
+      <categories>
+          
+          <category> vscode运用 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何改名网易邮箱</title>
+      <link href="/2022/07/29/how-to-gai-ming/"/>
+      <url>/2022/07/29/how-to-gai-ming/</url>
+      
+        <content type="html"><![CDATA[<p>##视频</p><p><video src="1.mp4" position="absolute" width="100%" height="100%" controls="controls"></video></p><span id="more"></span>]]></content>
+      
+      
+      <categories>
+          
+          <category> vscode运用 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>How to install mysql</title>
+      <link href="/2022/07/29/how-to-installmysql/"/>
+      <url>/2022/07/29/how-to-installmysql/</url>
+      
+        <content type="html"><![CDATA[<h2 id="推荐链接地址：https-blog-csdn-net-Dai-sir-man-article-details-121233207"><a href="#推荐链接地址：https-blog-csdn-net-Dai-sir-man-article-details-121233207" class="headerlink" title="推荐链接地址：https://blog.csdn.net/Dai_sir_man/article/details/121233207"></a>推荐链接地址：<a href="https://blog.csdn.net/Dai_sir_man/article/details/121233207">https://blog.csdn.net/Dai_sir_man/article/details/121233207</a></h2><h2 id="mysql安装错误卸载推荐链接：https-blog-csdn-net-qq-42025798-article-details-119934735"><a href="#mysql安装错误卸载推荐链接：https-blog-csdn-net-qq-42025798-article-details-119934735" class="headerlink" title="mysql安装错误卸载推荐链接：https://blog.csdn.net/qq_42025798/article/details/119934735"></a>mysql安装错误卸载推荐链接：<a href="https://blog.csdn.net/qq_42025798/article/details/119934735">https://blog.csdn.net/qq_42025798/article/details/119934735</a></h2><h2 id="如何在MySQL官网下载Java连接MySQL数据库的驱动jar包：https-blog-csdn-net-denghuanzhang-article-details-121030779-spm-1001-2101-3001-6650-3-amp-depth-1-utm-relevant-index-6"><a href="#如何在MySQL官网下载Java连接MySQL数据库的驱动jar包：https-blog-csdn-net-denghuanzhang-article-details-121030779-spm-1001-2101-3001-6650-3-amp-depth-1-utm-relevant-index-6" class="headerlink" title="如何在MySQL官网下载Java连接MySQL数据库的驱动jar包：https://blog.csdn.net/denghuanzhang/article/details/121030779?spm=1001.2101.3001.6650.3&amp;depth_1-utm_relevant_index=6"></a>如何在MySQL官网下载Java连接MySQL数据库的驱动jar包：<a href="https://blog.csdn.net/denghuanzhang/article/details/121030779?spm=1001.2101.3001.6650.3&amp;depth_1-utm_relevant_index=6">https://blog.csdn.net/denghuanzhang/article/details/121030779?spm=1001.2101.3001.6650.3&amp;depth_1-utm_relevant_index=6</a></h2><h2 id="关闭和启动mysql服务推荐链接：https-blog-csdn-net-zhuiqiuzhuoyue583-article-details-80790155"><a href="#关闭和启动mysql服务推荐链接：https-blog-csdn-net-zhuiqiuzhuoyue583-article-details-80790155" class="headerlink" title="关闭和启动mysql服务推荐链接：https://blog.csdn.net/zhuiqiuzhuoyue583/article/details/80790155"></a>关闭和启动mysql服务推荐链接：<a href="https://blog.csdn.net/zhuiqiuzhuoyue583/article/details/80790155">https://blog.csdn.net/zhuiqiuzhuoyue583/article/details/80790155</a></h2><span id="more"></span><h2 id="sql-service安装教程："><a href="#sql-service安装教程：" class="headerlink" title="sql service安装教程："></a>sql service安装教程：</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> mysql安装运用 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何解决vscode更新问题</title>
+      <link href="/2022/07/29/how-to-update-vscode/"/>
+      <url>/2022/07/29/how-to-update-vscode/</url>
+      
+        <content type="html"><![CDATA[<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>更新需要你去下载最新安装包，vscode会自动弹出来的</p><p>下载好压缩包后</p><p>复制拷贝到自己以前安装vscode的bin目录，点击解压缩</p><p>全部覆盖就行</p><h3 id="注意，你的插件是不会受到影响的"><a href="#注意，你的插件是不会受到影响的" class="headerlink" title="注意，你的插件是不会受到影响的"></a>注意，你的插件是不会受到影响的</h3><span id="more"></span>]]></content>
+      
+      
+      <categories>
+          
+          <category> vscode运用 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>while(reder.hasNextDouble)的用法</title>
+      <link href="/2022/07/29/java-println/"/>
+      <url>/2022/07/29/java-println/</url>
+      
+        <content type="html"><![CDATA[<p>##代码例子</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">import java.util. * ;</span><br><span class="line">public class Example3_9 &#123;</span><br><span class="line">    public static void main(String args[]) &#123;</span><br><span class="line">        Scanner reader=new Scanner(System.<span class="keyword">in</span>);</span><br><span class="line">        double <span class="built_in">sum</span>=0;</span><br><span class="line">        int m=0;</span><br><span class="line">        <span class="keyword">while</span>(reader.hasNextInt())&#123;//判定是否输入的流是int类型，如果不是则跳出程序</span><br><span class="line">            double x=reader.nextDouble();</span><br><span class="line">            m=m+1;</span><br><span class="line">            <span class="built_in">sum</span>=<span class="built_in">sum</span>+x;</span><br><span class="line">        &#125;        </span><br><span class="line">        System.out.printf(<span class="string">&quot;%d个数的和为%f\n&quot;</span>,m,<span class="built_in">sum</span>);</span><br><span class="line">        System.out.printf(<span class="string">&quot;%d个数的平均值是%f\n&quot;</span>,m,<span class="built_in">sum</span>/m);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>###程序<br><img src="https://i.postimg.cc/zfDP1LKM/1.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> java运用 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何运行vscode不可运行的exe文件</title>
+      <link href="/2022/07/29/use-the-vscode/"/>
+      <url>/2022/07/29/use-the-vscode/</url>
+      
+        <content type="html"><![CDATA[<h2 id="如何解决vxcode中C-x2F-C-中的exe文件运行出现乱码的问题"><a href="#如何解决vxcode中C-x2F-C-中的exe文件运行出现乱码的问题" class="headerlink" title="如何解决vxcode中C&#x2F;C++中的exe文件运行出现乱码的问题"></a>如何解决vxcode中C&#x2F;C++中的exe文件运行出现乱码的问题</h2><p>首先我们先运行一个简单的C++文件</p><p>如图：</p><p><img src="/2022/07/29/use-the-vscode/1.png"></p><p>我们可以看到，vscode下面的终端输出了我们的程序</p><p><img src="/2022/07/29/use-the-vscode/2.png"></p><p>并在左上角生成了exe文件<br><img src="/2022/07/29/use-the-vscode/3.png"></p><p>打开文件夹运行发现运行失败</p><p>遇到这种情况我们只需要调出cmd并且将exe文件拖入控制台即可运行成功</p><p><img src="/2022/07/29/use-the-vscode/4.png"><br><img src="/2022/07/29/use-the-vscode/5.png"><br>运行大的文件的话，也是一样</p><p><img src="/2022/07/29/use-the-vscode/6.png"></p><p>下面以贪吃蛇为例<br><img src="/2022/07/29/use-the-vscode/7.png"></p><p>视频:</p><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="https://www.bilibili.com/video/BV1bd4y1U7th/" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div><p>视频清晰度问题：需要登陆才能看到108p的</p><p><video src="2.mp4" position="absolute" width="100%" height="100%" controls="controls"></video></p><span id="more"></span>]]></content>
+      
+      
+      <categories>
+          
+          <category> vscode运用 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>How to use IDM</title>
+      <link href="/2022/07/29/how-to-use-ide/"/>
+      <url>/2022/07/29/how-to-use-ide/</url>
+      
+        <content type="html"><![CDATA[<img src="/2022/07/29/how-to-use-ide/21.jpg" class title="IDM"><h2 id="大家好"><a href="#大家好" class="headerlink" title="大家好"></a>大家好</h2><p>本文目标：介绍一个好用的下载器—IDM</p><p>使用方法：先下载安装到自己喜欢的目录</p><p>在浏览器安装插件：eage可以下载扩展</p><img src="/2022/07/29/how-to-use-ide/20.png" class title="图例"><p>IDM下载链接<br>链接：<a href="https://pan.baidu.com/s/1jqPjF0c33Cug0ue8a-WFVA?pwd=0000">https://pan.baidu.com/s/1jqPjF0c33Cug0ue8a-WFVA?pwd=0000</a><br>提取码：0000 </p><p>内容丰富</p><span id="more"></span>]]></content>
+      
+      
+      <categories>
+          
+          <category> 下载神器 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何配置mingw</title>
+      <link href="/2022/07/20/mingw-download/"/>
+      <url>/2022/07/20/mingw-download/</url>
+      
+        <content type="html"><![CDATA[<h2 id="mingw官方链接：https-sourceforge-net-projects-mingw"><a href="#mingw官方链接：https-sourceforge-net-projects-mingw" class="headerlink" title="mingw官方链接：https://sourceforge.net/projects/mingw/"></a>mingw官方链接：<a href="https://sourceforge.net/projects/mingw/">https://sourceforge.net/projects/mingw/</a></h2><p>页面：</p><p><img src="/2022/07/20/mingw-download/1.png" alt="界面介绍"></p><h2 id="vscode中需要的mingw64搭建"><a href="#vscode中需要的mingw64搭建" class="headerlink" title="vscode中需要的mingw64搭建"></a>vscode中需要的mingw64搭建</h2><p>需要的安装包和教程都在链接里<br>链接：<a href="https://pan.baidu.com/s/1xesGdtuLuWBvqOqbTDQg2A?pwd=0000">https://pan.baidu.com/s/1xesGdtuLuWBvqOqbTDQg2A?pwd=0000</a><br>提取码：0000 </p><h2 id="环境配置："><a href="#环境配置：" class="headerlink" title="环境配置："></a>环境配置：</h2><p>1.此电脑右键打开电脑属性<br>2.打开高级系统设置<br>3.点击环境变量</p><p><img src="/2022/07/20/mingw-download/2.png" alt="环境配置"></p><p>4.双击下面的path<br>5.点击新建，然后点击浏览<br>6.浏览到自己的mingwbin目录就行</p><p><img src="/2022/07/20/mingw-download/3.png" alt="如图"></p><span id="more"></span>]]></content>
+      
+      
+      <categories>
+          
+          <category> vscode运用 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
