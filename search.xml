@@ -17,6 +17,25 @@
     
     
     <entry>
+      <title>如何解决maven配置变化</title>
+      <link href="/2023/01/10/maven-use/"/>
+      <url>/2023/01/10/maven-use/</url>
+      
+        <content type="html"><![CDATA[<p>###这里以2022.2.3版本的idea为例</p><p>首先打开idea项目创建面板</p><p><img src="/2023/01/10/maven-use/1.png"></p><p>点击customize，在右边的下面点击configure</p><p>搜索maven</p><p><img src="/2023/01/10/maven-use/2.png"></p><p>修改自己的maven配置</p><p>点击apply再点击ok</p><p>新建一个项目</p><p><img src="/2023/01/10/maven-use/3.png"></p><p>打开setting</p><p>可以看到和自己修改的配置一样</p><p><img src="/2023/01/10/maven-use/4.png"></p><span id="more"></span>]]></content>
+      
+      
+      <categories>
+          
+          <category> java运用 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>如何解决vscode运行cmd出现乱码</title>
       <link href="/2022/09/26/solve-the-vscode/"/>
       <url>/2022/09/26/solve-the-vscode/</url>
