@@ -5,7 +5,7 @@ A=O.context;var S=!A._isMounted||!n.isRootInsert;if(!S||x||""===x){var T=S&&d?d:
 /*波推回复*/
 function bot_ui_ini(){
 	var botui=new BotUI("hello-mashiro");botui.message.add({delay:800,content:"Hi, there👋"})
-	.then(function(){botui.message.add({delay:1100,content:"这里是 梦寐的小站！"})
+	.then(function(){botui.message.add({delay:1100,content:"这里是 Elik的小站！"})
 	.then(function(){botui.message.add({delay:1100,content:"一个后来才知道努力的男孩子~"})
 	.then(function(){
 		botui.action.button({
